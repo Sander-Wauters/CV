@@ -21,8 +21,8 @@ export const Projects = ({ sx }: ProjectsProps) => {
         </ListItem>
         <ListItem>
           <Stack>
-            <Typography variant="h6">{t("label.cmses")}</Typography>
-            <Typography>{t("paragraph.cmses")}</Typography>
+            <Typography variant="h6">{t("label.cmss")}</Typography>
+            <Typography>{t("paragraph.cmss")}</Typography>
           </Stack>
         </ListItem>
         <ListItem>

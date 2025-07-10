@@ -1,3 +1,7 @@
+import "@fontsource/roboto/300.css";
+import "@fontsource/roboto/400.css";
+import "@fontsource/roboto/500.css";
+import "@fontsource/roboto/700.css";
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router";
@@ -12,7 +16,9 @@ const router = createBrowserRouter([
   },
 ]);
 
-const theme = createTheme({
+const colors = createTheme({});
+
+const theme = createTheme(colors, {
   components: {
     MuiContainer: {
       defaultProps: {
@@ -33,6 +39,34 @@ const theme = createTheme({
           py: 0.5,
         },
       },
+    },
+    MuiDivider: {
+      defaultProps: {
+        sx: {
+          borderColor: colors.palette.primary.light,
+        },
+      },
+    },
+    MuiTypography: {
+      defaultProps: {
+        sx: {
+          lineHeight: 1.4,
+        },
+      },
+    },
+    MuiCssBaseline: {
+      styleOverrides: `
+        h2, h4 {
+          color: ${colors.palette.primary.light};
+        }
+        // Increase default font size by 0.5rem.
+        h2:first-letter {
+          font-size: 4.25rem;
+        }
+        h4:first-letter {
+          font-size: 2.625rem;
+        }
+      `,
     },
   },
 });

@@ -9,10 +9,17 @@ import { Projects } from "./sections/projects";
 
 export const Layout = () => {
   return (
-    <Container component="main" sx={{ mb: 2 }}>
-      <Heading sx={{ my: 2 }} />
-      <Stack direction="row" gap={2}>
-        <Stack gap={2} sx={{ minWidth: "30%" }}>
+    <Container
+      component="main"
+      sx={{
+        pb: 2,
+        minWidth: "100%",
+        minHeight: "100vh",
+      }}
+    >
+      <Heading sx={{ py: 1 }} />
+      <Stack direction="row" gap={1}>
+        <Stack gap={1} sx={{ minWidth: "30%" }}>
           <Contact />
           <Divider />
           <Education />
@@ -20,7 +27,7 @@ export const Layout = () => {
           <Projects />
         </Stack>
         <Divider orientation="vertical" flexItem />
-        <Stack gap={2}>
+        <Stack gap={1}>
           <Profile />
           <Divider />
           <Experience />

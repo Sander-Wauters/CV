@@ -59,29 +59,45 @@ export const Skills = ({ sx }: SkillsProps) => {
       <Typography variant="h4">{t("title.skills")}</Typography>
       <Stack gap={1}>
         <SkillsSection title={t("label.programmingLanguages")}>
-          {programmingLanguages.map((value) => (
-            <Typography key={value}>{value}</Typography>
-          ))}
+          <Typography>
+            {programmingLanguages.reduce(
+              (acc, val, i) => `${acc}${i > 0 ? " | " : ""}${val}`,
+              "",
+            )}
+          </Typography>
         </SkillsSection>
         <SkillsSection title={t("label.frameworks")}>
-          {frameworks.map((value) => (
-            <Typography key={value}>{value}</Typography>
-          ))}
+          <Typography>
+            {frameworks.reduce(
+              (acc, val, i) => `${acc}${i > 0 ? " | " : ""}${val}`,
+              "",
+            )}
+          </Typography>
         </SkillsSection>
         <SkillsSection title={t("label.databases")}>
-          {databases.map((value) => (
-            <Typography key={value}>{value}</Typography>
-          ))}
+          <Typography>
+            {databases.reduce(
+              (acc, val, i) => `${acc}${i > 0 ? " | " : ""}${val}`,
+              "",
+            )}
+          </Typography>
         </SkillsSection>
         <SkillsSection title={t("label.tools")}>
-          {tools.map((value) => (
-            <Typography key={value}>{value}</Typography>
-          ))}
+          <Typography>
+            {tools.reduce(
+              (acc, val, i) => `${acc}${i > 0 ? " | " : ""}${val}`,
+              "",
+            )}
+          </Typography>
         </SkillsSection>
         <SkillsSection title={t("label.languages")}>
-          {languages.map((value) => (
-            <Typography key={value}>{t(`label.${value}`)}</Typography>
-          ))}
+          <Typography>
+            {languages.reduce(
+              (acc, val, i) =>
+                `${acc}${i > 0 ? " | " : ""}${t(`label.${val}`)}`,
+              "",
+            )}
+          </Typography>
         </SkillsSection>
       </Stack>
     </Box>

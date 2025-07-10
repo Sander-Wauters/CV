@@ -23,7 +23,7 @@
     "internship": "Stage",
     "woodworker": "Schrijnwerker",
     "thisCV": "Deze CV",
-    "cmses": "Verschillende CMSes",
+    "cmss": "Verschillende CMSs",
     "editorConfiguration": "Code editor",
     "gameEngine": "Game engine",
     "programmingLanguages": "Programmeer talen",
@@ -40,7 +40,7 @@
     "internship": "Tijdens mijn stage bij Codifly heb ik als full stack developer meegewerkt aan interne en externe projecten. Hier heb leren werken met GraphQL en heb ik mijn kennis van React en web development in het geheel grondig kunnen uitbreiden.",
     "woodworker": "In de korte periode waarin ik als schrijnwerker werkte, heb ik enkele nuttige vaardigheden aangeleerd. Zoals hoe je op een professionele manier met klanten moet omgaan en dat je altijd drie stappen vooruit moet kunnen denken.",
     "thisCV": "Deze cv is een screenshot van een webpagina gemaakt in React dat in een Docker container draait. De code is terug te vinden op mijn GitHub.",
-    "cmses": "Content Management Systems zijn het soort van applicaties waar ik heb meest gekend in ben. Zowel als eigen hobby project, enkele school projecten of voor een klant tijdens mijn stage bij Codifly, dit is het type applicatie waar ik het meest over weet.",
+    "cmss": "Content Management Systems zijn het soort van applicaties waar ik heb meest gekend in ben. Zowel als eigen hobby project, enkele school projecten of voor een klant tijdens mijn stage bij Codifly, dit is het type applicatie waar ik het meest over weet.",
     "editorConfiguration": "Een project dat ik dagelijks gebruik en dat bijdraagt aan mijn productiviteit als programmeur is de configuratie van mijn code editor.",
     "gameEngine": "Een van mijn eerste hobby projecten was het maken van een 3D game-engine in DirectX 12. Hoewel nooit afgewerkt heb ik verschillende complexe systemen kunnen uitwerken zoals 3D-animatie."
   }

@@ -15,18 +15,24 @@ export const Experience = ({ sx }: ExperienceProps) => {
       <List>
         <ListItem>
           <Stack>
-            <Typography variant="h6">
-              {t("label.internship")} {t("label.codifly")} 2024-2025
-            </Typography>
+            <Stack direction="row" justifyContent="space-between">
+              <Typography variant="h6">
+                {t("label.internship")} - {t("label.codifly")}
+              </Typography>
+              <Typography variant="h6">2024-2025</Typography>
+            </Stack>
             <Typography>{t("paragraph.internship")}</Typography>
           </Stack>
         </ListItem>
         <ListItem>
           <Stack>
-            <Typography variant="h6">
-              {t("label.woodworker")} {t("label.lohisse")} 2019-2020
-              <Typography>{t("paragraph.woodworker")}</Typography>
-            </Typography>
+            <Stack direction="row" justifyContent="space-between">
+              <Typography variant="h6">
+                {t("label.woodworker")} - {t("label.lohisse")}
+              </Typography>
+              <Typography variant="h6">2019-2020</Typography>
+            </Stack>
+            <Typography>{t("paragraph.woodworker")}</Typography>
           </Stack>
         </ListItem>
       </List>
