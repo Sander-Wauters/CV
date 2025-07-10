@@ -19,6 +19,21 @@ const theme = createTheme({
         maxWidth: "xl",
       },
     },
+    MuiList: {
+      defaultProps: {
+        sx: {
+          p: 0,
+        },
+      },
+    },
+    MuiListItem: {
+      defaultProps: {
+        sx: {
+          px: 0,
+          py: 0.5,
+        },
+      },
+    },
   },
 });
 

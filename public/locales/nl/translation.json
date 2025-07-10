@@ -9,6 +9,39 @@
     "projects": "Projecten",
     "skills": "Vaardigheden"
   },
-  "label": {},
-  "paragraph": {}
+  "label": {
+    "mail": "sander1352@hotmail.be",
+    "phone": "+32 474 80 40 16",
+    "location": "1790 Affligem",
+    "github": "github.com/Sander-Wauters",
+    "hogent": "HOGENT",
+    "syntra": "Syntra Midden-Vlaanderen",
+    "appliedInformatics": "Toegepaste Informatica",
+    "networkAdministrator": "Netwerkbeheerder",
+    "codifly": "Codifly",
+    "lohisse": "Lohisse",
+    "internship": "Stage",
+    "woodworker": "Schrijnwerker",
+    "thisCV": "Deze CV",
+    "cmses": "Verschillende CMSes",
+    "editorConfiguration": "Code editor",
+    "gameEngine": "Game engine",
+    "programmingLanguages": "Programmeer talen",
+    "frameworks": "Frameworks",
+    "databases": "Databases",
+    "tools": "Tools",
+    "languages": "Talen",
+    "dutch": "Nederlands",
+    "english": "Engels",
+    "nativeLanguage": "Moedertaal"
+  },
+  "paragraph": {
+    "profile": "Student Toegepaste Informatica met een passie voor programmeren en het bouwen van schaalbare oplossingen. Sterk in reverse engineering en zelfstandig probleemoplossend denken. Op zoek naar uitdagende projecten waarin ik mijn technische en analytische vaardigheden verder kan ontwikkelen.",
+    "internship": "Tijdens mijn stage bij Codifly heb ik als full stack developer meegewerkt aan interne en externe projecten. Hier heb leren werken met GraphQL en heb ik mijn kennis van React en web development in het geheel grondig kunnen uitbreiden.",
+    "woodworker": "In de korte periode waarin ik als schrijnwerker werkte, heb ik enkele nuttige vaardigheden aangeleerd. Zoals hoe je op een professionele manier met klanten moet omgaan en dat je altijd drie stappen vooruit moet kunnen denken.",
+    "thisCV": "Deze cv is een screenshot van een webpagina gemaakt in React dat in een Docker container draait. De code is terug te vinden op mijn GitHub.",
+    "cmses": "Content Management Systems zijn het soort van applicaties waar ik heb meest gekend in ben. Zowel als eigen hobby project, enkele school projecten of voor een klant tijdens mijn stage bij Codifly, dit is het type applicatie waar ik het meest over weet.",
+    "editorConfiguration": "Een project dat ik dagelijks gebruik en dat bijdraagt aan mijn productiviteit als programmeur is de configuratie van mijn code editor.",
+    "gameEngine": "Een van mijn eerste hobby projecten was het maken van een 3D game-engine in DirectX 12. Hoewel nooit afgewerkt heb ik verschillende complexe systemen kunnen uitwerken zoals 3D-animatie."
+  }
 }

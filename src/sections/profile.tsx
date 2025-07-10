@@ -12,6 +12,7 @@ export const Profile = ({ sx }: ProfileProps) => {
   return (
     <Box sx={sx}>
       <Typography variant="h4">{t("title.profile")}</Typography>
+      <Typography>{t("paragraph.profile")}</Typography>
     </Box>
   );
 };
