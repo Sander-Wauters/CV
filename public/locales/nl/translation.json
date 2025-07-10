@@ -1,7 +1,13 @@
 {
   "title": {
     "name": "Sander Wauters",
-    "job": "Frull stack developer"
+    "job": "Full stack developer",
+    "contact": "Contact",
+    "education": "Opleiding",
+    "experience": "Ervaring",
+    "profile": "Profiel",
+    "projects": "Projecten",
+    "skills": "Vaardigheden"
   },
   "label": {},
   "paragraph": {}

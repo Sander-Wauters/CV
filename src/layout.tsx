@@ -1,12 +1,30 @@
-import { useTranslation } from "react-i18next";
-import styled from "styled-components";
-
-const Title = styled.h1`
-  font-size: 1.5rem;
-`;
+import { Box, Container, Divider, Stack } from "@mui/material";
+import { Heading } from "./sections/heading";
+import { Profile } from "./sections/profile";
+import { Contact } from "./sections/contact";
+import { Experience } from "./sections/experience";
+import { Education } from "./sections/education";
+import { Skills } from "./sections/skills";
 
 export const Layout = () => {
-  const { t } = useTranslation();
-
-  return <Title>{t("title.name")}</Title>;
+  return (
+    <Container component="main">
+      <Heading />
+      <Stack direction="row" gap={2}>
+        <Box>
+          <Contact />
+          <Divider />
+          <Education />
+        </Box>
+        <Divider orientation="vertical" flexItem />
+        <Box>
+          <Profile />
+          <Divider />
+          <Experience />
+          <Divider />
+          <Skills />
+        </Box>
+      </Stack>
+    </Container>
+  );
 };
