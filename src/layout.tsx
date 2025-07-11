@@ -8,7 +8,7 @@ import { Skills } from "./sections/skills";
 import { Projects } from "./sections/projects";
 
 const gap = 2 as const;
-const leftColumn = "60%" as const;
+const leftColumn = "63%" as const;
 
 export const Layout = () => {
   return (
@@ -21,16 +21,19 @@ export const Layout = () => {
       })}
     >
       <Stack direction="row" gap={gap}>
-        <Heading sx={{ minWidth: leftColumn }} />
+        <Heading sx={{ minWidth: leftColumn, maxWidth: leftColumn }} />
         <Divider orientation="vertical" flexItem />
         <Contact sx={{ pb: gap }} />
       </Stack>
       <Divider />
       <Stack direction="row" gap={gap}>
-        <Stack gap={gap} sx={{ minWidth: leftColumn, pt: gap }}>
+        <Stack
+          gap={gap}
+          sx={{ minWidth: leftColumn, maxWidth: leftColumn, pt: gap }}
+        >
           <Profile />
           <Divider />
-          <Experience />
+          <Experience gap={gap} />
           <Divider />
           <Skills gap={gap} />
         </Stack>

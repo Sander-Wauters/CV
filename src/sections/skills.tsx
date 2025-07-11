@@ -87,7 +87,7 @@ export const Skills = ({ gap, sx }: SkillsProps) => {
             }}
           >
             {languages.map((val) => (
-              <Typography>
+              <Typography key={val.language}>
                 {t(`label.${val.language}`)} - {t(`label.${val.level}`)}
               </Typography>
             ))}

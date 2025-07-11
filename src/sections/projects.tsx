@@ -1,5 +1,5 @@
 import { Theme } from "@emotion/react";
-import { Box, List, ListItem, Stack, SxProps, Typography } from "@mui/material";
+import { Box, List, ListItem, SxProps, Typography } from "@mui/material";
 import { useTranslation } from "react-i18next";
 
 interface ProjectsProps {
@@ -14,30 +14,28 @@ export const Projects = ({ sx }: ProjectsProps) => {
       <Typography variant="h4">{t("title.projects")}</Typography>
       <List>
         <ListItem>
-          <Stack>
-            <Typography variant="h6">{t("label.thisCV")}</Typography>
-            <Typography>{t("paragraph.thisCV")}</Typography>
-          </Stack>
-        </ListItem>
-        <ListItem>
-          <Stack>
+          <Box>
             <Typography variant="h6">{t("label.cmss")}</Typography>
-            <Typography>{t("paragraph.cmss")}</Typography>
-          </Stack>
+            <Typography sx={{ pt: 0.5 }}>{t("paragraph.cmss")}</Typography>
+          </Box>
         </ListItem>
         <ListItem>
-          <Stack>
+          <Box>
             <Typography variant="h6">
               {t("label.editorConfiguration")}
             </Typography>
-            <Typography>{t("paragraph.editorConfiguration")}</Typography>
-          </Stack>
+            <Typography sx={{ pt: 0.5 }}>
+              {t("paragraph.editorConfiguration")}
+            </Typography>
+          </Box>
         </ListItem>
         <ListItem>
-          <Stack>
+          <Box>
             <Typography variant="h6">{t("label.gameEngine")}</Typography>
-            <Typography>{t("paragraph.gameEngine")}</Typography>
-          </Stack>
+            <Typography sx={{ pt: 0.5 }}>
+              {t("paragraph.gameEngine")}
+            </Typography>
+          </Box>
         </ListItem>
       </List>
     </Box>
