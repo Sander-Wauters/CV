@@ -16,13 +16,25 @@ const router = createBrowserRouter([
   },
 ]);
 
-const colors = createTheme({});
+const colors = createTheme({
+  palette: {
+    primary: {
+      main: "#458588",
+    },
+    secondary: {
+      main: "#076678",
+    },
+    background: {
+      default: "#FCFCFA",
+    },
+  },
+});
 
 const theme = createTheme(colors, {
   components: {
     MuiContainer: {
       defaultProps: {
-        maxWidth: "xl",
+        maxWidth: "md",
       },
     },
     MuiList: {
@@ -43,7 +55,7 @@ const theme = createTheme(colors, {
     MuiDivider: {
       defaultProps: {
         sx: {
-          borderColor: colors.palette.primary.light,
+          borderColor: colors.palette.primary.main,
         },
       },
     },
@@ -57,7 +69,10 @@ const theme = createTheme(colors, {
     MuiCssBaseline: {
       styleOverrides: `
         h2, h4 {
-          color: ${colors.palette.primary.light};
+          color: ${colors.palette.primary.main};
+        }
+        h6 {
+          color: ${colors.palette.secondary.main};
         }
         // Increase default font size by 0.5rem.
         h2:first-letter {

@@ -1,5 +1,5 @@
 import { Theme } from "@emotion/react";
-import { Box, Divider, SxProps, Typography } from "@mui/material";
+import { Box, SxProps, Typography } from "@mui/material";
 import { useTranslation } from "react-i18next";
 
 interface HeadingProps {
@@ -15,7 +15,6 @@ export const Heading = ({ sx }: HeadingProps) => {
       <Typography variant="h4" sx={{ pb: 1 }}>
         {t("title.job")}
       </Typography>
-      <Divider />
     </Box>
   );
 };
