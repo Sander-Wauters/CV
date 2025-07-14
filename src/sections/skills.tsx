@@ -3,7 +3,7 @@ import { Box, Stack, SxProps, Typography } from "@mui/material";
 import { ReactNode } from "react";
 import { useTranslation } from "react-i18next";
 
-const sectionWidth = "14rem" as const;
+const sectionWidth = "50%" as const;
 
 const programmingLanguages = [
   "HTML",

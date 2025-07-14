@@ -1,7 +1,5 @@
-import "@fontsource/roboto/300.css";
-import "@fontsource/roboto/400.css";
-import "@fontsource/roboto/500.css";
-import "@fontsource/roboto/700.css";
+import "@fontsource-variable/roboto";
+import "@fontsource-variable/lora";
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router";
@@ -16,13 +14,16 @@ const router = createBrowserRouter([
   },
 ]);
 
-const colors = createTheme({
+const primaryFont = `"Roboto Variable", sans-serif` as const;
+const secondaryFont = `"Lora Variable", sans-serif` as const;
+
+const theme = createTheme({
   palette: {
     primary: {
-      main: "#458588",
+      main: "#076678",
     },
     secondary: {
-      main: "#076678",
+      main: "#458588",
     },
     background: {
       default: "#FCFCFA",
@@ -30,7 +31,28 @@ const colors = createTheme({
   },
 });
 
-const theme = createTheme(colors, {
+const components = createTheme(theme, {
+  typography: {
+    fontFamily: primaryFont,
+    h1: {
+      fontFamily: secondaryFont,
+    },
+    h2: {
+      fontFamily: secondaryFont,
+    },
+    h3: {
+      fontFamily: secondaryFont,
+    },
+    h4: {
+      fontFamily: secondaryFont,
+    },
+    h5: {
+      fontFamily: secondaryFont,
+    },
+    h6: {
+      fontFamily: secondaryFont,
+    },
+  },
   components: {
     MuiContainer: {
       defaultProps: {
@@ -55,12 +77,17 @@ const theme = createTheme(colors, {
     MuiDivider: {
       defaultProps: {
         sx: {
-          borderColor: colors.palette.primary.main,
+          borderColor: theme.palette.secondary.main,
         },
       },
     },
     MuiTypography: {
       defaultProps: {
+        variantMapping: {
+          h2: "h1",
+          h4: "h2",
+          h6: "h3",
+        },
         sx: {
           lineHeight: 1.4,
         },
@@ -68,18 +95,17 @@ const theme = createTheme(colors, {
     },
     MuiCssBaseline: {
       styleOverrides: `
-        h2, h4 {
-          color: ${colors.palette.primary.main};
+        h1, h2 {
+          color: ${theme.palette.primary.main};
         }
-        h6 {
-          color: ${colors.palette.secondary.main};
+        h3, h4 {
+          color: ${theme.palette.secondary.main};
         }
-        // Increase default font size by 0.5rem.
+        h1:first-letter {
+          font-size: calc(100% + 0.5rem);
+        }
         h2:first-letter {
-          font-size: 4.25rem;
-        }
-        h4:first-letter {
-          font-size: 2.625rem;
+          font-size: calc(100% + 0.5rem);
         }
       `,
     },
@@ -88,7 +114,7 @@ const theme = createTheme(colors, {
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    <ThemeProvider theme={theme}>
+    <ThemeProvider theme={components}>
       <CssBaseline />
       <RouterProvider router={router} />
     </ThemeProvider>

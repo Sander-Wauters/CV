@@ -12,7 +12,7 @@ export const Heading = ({ sx }: HeadingProps) => {
   return (
     <Box sx={sx}>
       <Typography variant="h2">{t("title.name")}</Typography>
-      <Typography variant="h4" sx={{ pb: 1 }}>
+      <Typography variant="h4" sx={{ pb: 1.5 }}>
         {t("title.job")}
       </Typography>
     </Box>

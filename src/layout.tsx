@@ -1,4 +1,4 @@
-import { Container, Stack, Divider } from "@mui/material";
+import { Container, Stack, Divider, Box } from "@mui/material";
 import { Heading } from "./sections/heading";
 import { Profile } from "./sections/profile";
 import { Contact } from "./sections/contact";
@@ -7,43 +7,53 @@ import { Education } from "./sections/education";
 import { Skills } from "./sections/skills";
 import { Projects } from "./sections/projects";
 
-const gap = 2 as const;
-const leftColumn = "63%" as const;
+const leftColumn = "64%" as const;
 
 export const Layout = () => {
   return (
     <Container
       component="main"
       sx={(theme) => ({
-        py: gap,
         minHeight: "100vh",
         backgroundColor: theme.palette.background.default,
       })}
     >
-      <Stack direction="row" gap={gap}>
-        <Heading sx={{ minWidth: leftColumn, maxWidth: leftColumn }} />
-        <Divider orientation="vertical" flexItem />
-        <Contact sx={{ pb: gap }} />
-      </Stack>
-      <Divider />
-      <Stack direction="row" gap={gap}>
-        <Stack
-          gap={gap}
-          sx={{ minWidth: leftColumn, maxWidth: leftColumn, pt: gap }}
-        >
-          <Profile />
-          <Divider />
-          <Experience gap={gap} />
-          <Divider />
-          <Skills gap={gap} />
+      <Box sx={{ pl: 1, pt: 1.5, pr: 2, pb: 3 }}>
+        <Stack direction="row">
+          <Heading
+            sx={{
+              minWidth: leftColumn,
+              maxWidth: leftColumn,
+              pr: 2,
+              pb: 1.5,
+            }}
+          />
+          <Divider orientation="vertical" flexItem />
+          <Contact sx={{ pl: 2, pb: 1.5 }} />
         </Stack>
-        <Divider orientation="vertical" flexItem />
-        <Stack gap={gap} sx={{ pt: gap }}>
-          <Education />
-          <Divider />
-          <Projects />
+        <Divider />
+        <Stack direction="row">
+          <Stack
+            sx={{
+              minWidth: leftColumn,
+              maxWidth: leftColumn,
+              pr: 2,
+            }}
+          >
+            <Profile sx={{ pt: 1, pb: 1.5 }} />
+            <Divider />
+            <Experience sx={{ pt: 1, pb: 1.5 }} />
+            <Divider />
+            <Skills sx={{ pt: 1 }} gap={1.5} />
+          </Stack>
+          <Divider orientation="vertical" flexItem />
+          <Stack sx={{ pl: 2 }}>
+            <Education sx={{ pt: 1, pb: 1.5 }} />
+            <Divider />
+            <Projects sx={{ pt: 1 }} />
+          </Stack>
         </Stack>
-      </Stack>
+      </Box>
     </Container>
   );
 };

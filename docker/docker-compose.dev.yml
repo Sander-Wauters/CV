@@ -8,4 +8,4 @@ services:
     volumes:
       - ../:/web
       - /web/node_modules
-    command: yarn vite
+    command: sh -c "yarn install && yarn vite"

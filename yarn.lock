@@ -558,10 +558,15 @@
     "@eslint/core" "^0.13.0"
     levn "^0.4.1"
 
-"@fontsource/roboto@^5.2.6":
+"@fontsource-variable/lora@^5.2.6":
   version "5.2.6"
-  resolved "https://registry.yarnpkg.com/@fontsource/roboto/-/roboto-5.2.6.tgz#93a2a5ef98cc79880355de0aac71def215b873e7"
-  integrity sha512-hzarG7yAhMoP418smNgfY4fO7UmuUEm5JUtbxCoCcFHT0hOJB+d/qAEyoNjz7YkPU5OjM2LM8rJnW8hfm0JLaA==
+  resolved "https://registry.yarnpkg.com/@fontsource-variable/lora/-/lora-5.2.6.tgz#3e95f869431686514ba33098e48814c772fa90b4"
+  integrity sha512-jBiQEQXX6jUgdOhJwcHaJFXT+Zozu2zMMoqcamdJaHxF3cc+ZBUbvcNpD2vL7J24KypLKwvEIYVaU+FjPdr9MQ==
+
+"@fontsource-variable/roboto@^5.2.6":
+  version "5.2.6"
+  resolved "https://registry.yarnpkg.com/@fontsource-variable/roboto/-/roboto-5.2.6.tgz#1a618f7a9c70e756214352ce2c3864d1c61001dc"
+  integrity sha512-bKgCwHdRcUcHPmypU5oih+OnTQUnZ7XBoztJ0W2X+m7WRYITTWnnnQBDPAKbOwiemU/yJHGg+lD03M60BGuuGg==
 
 "@humanfs/core@^0.19.1":
   version "0.19.1"
