@@ -23,8 +23,7 @@
     "lohisse": "Lohisse",
     "internship": "Stage",
     "woodworker": "Schrijnwerker",
-    "thisCV": "Deze CV",
-    "cmss": "CMS-applicaties",
+    "webApps": "Webapplicaties",
     "editorConfiguration": "Code editor",
     "gameEngine": "Game engine",
     "programmingLanguages": "Programmeer talen",
@@ -46,7 +45,7 @@
     "woodworker": {
       "1": "Ontwikkelde vooruitdenkende planning en nauwkeurige afwerking."
     },
-    "cmss": "Mijn specialiteit: gebouwd en onderhouden voor hobby-, studie- en productie-omgevingen (o.a. bij Codifly), waardoor ik diepgaande domeinkennis heb opgebouwd.",
+    "webApps": "Mijn specialiteit: gebouwd en onderhouden voor hobby-, studie- en productie-omgevingen (o.a. bij Codifly), waardoor ik diepgaande domeinkennis heb opgebouwd.",
     "editorConfiguration": "Eigen, dagelijks gebruikte setup met geautomatiseerde tooling en plugins die mijn workflow aanzienlijk versnellen.",
     "gameEngine": "Hobbyproject waarin ik geavanceerde modules zoals 3D-animatie succesvol implementeerde en zo fundamentele graphics-principes leerde toepassen."
   }

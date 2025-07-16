@@ -15,8 +15,8 @@ export const Projects = ({ sx }: ProjectsProps) => {
       <List>
         <ListItem>
           <Box>
-            <Typography variant="h6">{t("label.cmss")}</Typography>
-            <Typography sx={{ pt: 0.5 }}>{t("paragraph.cmss")}</Typography>
+            <Typography variant="h6">{t("label.webApps")}</Typography>
+            <Typography sx={{ pt: 0.5 }}>{t("paragraph.webApps")}</Typography>
           </Box>
         </ListItem>
         <ListItem>
