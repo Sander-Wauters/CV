@@ -1,5 +1,5 @@
 import { Theme } from "@emotion/react";
-import { GitHub, MailOutline, Smartphone } from "@mui/icons-material";
+import { LinkedIn, MailOutline, Smartphone } from "@mui/icons-material";
 import { Box, List, ListItem, Stack, SxProps, Typography } from "@mui/material";
 import { useTranslation } from "react-i18next";
 
@@ -28,8 +28,8 @@ export const Contact = ({ sx }: ContactProps) => {
         </ListItem>
         <ListItem>
           <Stack direction="row" alignItems="center" gap={1}>
-            <GitHub color="primary" />
-            <Typography>{t("label.github")}</Typography>
+            <LinkedIn color="primary" />
+            <Typography>{t("label.linkedin")}</Typography>
           </Stack>
         </ListItem>
       </List>
