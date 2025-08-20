@@ -1,5 +1,6 @@
 import { Theme } from "@emotion/react";
-import { Box, List, ListItem, SxProps, Typography } from "@mui/material";
+import { GitHub } from "@mui/icons-material";
+import { Box, List, ListItem, Stack, SxProps, Typography } from "@mui/material";
 import { useTranslation } from "react-i18next";
 
 interface ProjectsProps {
@@ -12,6 +13,10 @@ export const Projects = ({ sx }: ProjectsProps) => {
   return (
     <Box sx={sx}>
       <Typography variant="h4">{t("title.projects")}</Typography>
+      <Stack direction="row" alignItems="center" gap={1}>
+        <GitHub color="primary" />
+        <Typography>{t("label.github")}</Typography>
+      </Stack>
       <List>
         <ListItem>
           <Box>
